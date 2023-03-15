@@ -110,8 +110,17 @@ sysctl_mods () {
 
 misc_setup () {
   sudo ln -s /usr/libexec/qemu-kvm /usr/bin/qemu-kvm
-  firewall-cmd --permanent --add-port=3080/tcp # allow http request on port 3080
+  firewall-cmd --permanent --add-port=3080/tcp 
   firewall-cmd --reload
+}
+
+xrdp_setup () {
+  sudo dnf install -y xrdp
+  sudo systemctl enable --now xrdp
+  sudo firewall-cmd --permanent --add-port=3389/tcp
+  sudo firewall-cmd --reload
+  echo gnome-session >~/.xsession
+  
 }
 
 main() {
@@ -130,6 +139,8 @@ main() {
   sysctl_mods
   gns3_registry_install
   misc_setup
+  xrdp_setup
+  reboot
 }
 
 main
