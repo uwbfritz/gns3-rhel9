@@ -86,7 +86,7 @@ docker_setup () {
   sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
   sudo dnf -y install docker-ce docker-ce-cli containerd.io 
   sudo systemctl enable --now docker
-  sudo usermod -aG docker "$(whoami)"
+  sudo usermod -aG docker "$(whoami)"  
 }
 
 libvirt_setup () {
@@ -101,6 +101,11 @@ libvirt_setup () {
 gns3_registry_install () {
   sudo git clone https://github.com/GNS3/gns3-registry.git /usr/local/share/gns3/gns3-registry
   sudo chmod -R 777 /usr/local/share/gns3/gns3-registry
+}
+
+sysctl_mods () {
+  sudo sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
+  sudo sed -i 's/#net.bridge.bridge-nf-call-iptables=1/net.bridge.bridge-nf-call-iptables=1/g' /etc/sysctl.conf
 }
 
 misc_setup () {
@@ -122,6 +127,7 @@ main() {
   install_ubridge
   docker_setup
   libvirt_setup
+  sysctl_mods
   gns3_registry_install
   misc_setup
 }
