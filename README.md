@@ -17,6 +17,13 @@ chmod +x rhel9-gns3-install.sh
 ./rhel9-gns3-install.sh
 ```
 
+### Run from the web
+You can also run the script directly from the web by using the following command:
+```
+curl -sSL https://raw.githubusercontent.com/uwbfritz/gns3-rhel9/master/scripts/install.sh | bash
+```
+
+
 ### What it does
 - Updates the system and disables SELinux.
 - Installs Server GUI if not already installed.
