@@ -10,4 +10,4 @@ cd "$INSTALL_DIR" || exit 1
 
 chmod +x -- *.sh
 
-bash rhel9-gns3-install.sh
+./rhel9-gns3-install.sh
