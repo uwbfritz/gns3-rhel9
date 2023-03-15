@@ -53,8 +53,6 @@ The script has three main functions:
 ### Variables
 The script uses the following variables:
 
-**VMWARE_VERSION**
-Defines the version of VMware Workstation or Player to be patched
+- **VMWARE_VERSION**: Defines the version of VMware Workstation or Player to be patched
 
-**TMP_FOLDER**
-Defines the temporary folder used to clone the vmware-host-modules repository. It defaults to /tmp/patch-vmware
+- **TMP_FOLDER**: Defines the temporary folder used to clone the vmware-host-modules repository. It defaults to /tmp/patch-vmware
