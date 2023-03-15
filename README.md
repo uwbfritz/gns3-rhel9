@@ -45,7 +45,7 @@ This script is designed to patch kernel modules for VMware Workstation 17.0.1 an
 To use this script, simply execute it in a terminal with administrative privileges:
 
 ```
-sudo ./VmwareKernelFix
+sudo ./vmware-kernel-fix.sh
 ```
 
 ### Functions
