@@ -8,4 +8,6 @@ curl -L https://github.com/uwbfritz/gns3-rhel9/archive/master.tar.gz | tar xz -C
 
 cd "$INSTALL_DIR" || exit 1
 
+chmod +x -- *.sh
+
 bash rhel9-gns3-install.sh
