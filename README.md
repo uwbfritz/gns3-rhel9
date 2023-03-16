@@ -1,6 +1,11 @@
 # RHEL9 GNS3 Installation Script
 This script installs and configures the necessary components to run GNS3 on Red Hat Enterprise Linux 9.
 
+[![ShellCheck](https://github.com/uwbfritz/gns3-rhel9/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/uwbfritz/gns3-rhel9/actions/workflows/shellcheck.yml)
+
+![Security Analysis of Shell Scripts](https://github.com/uwbfritz/gns3-rhel9/workflows/Security%20Analysis%20of%20Shell%20Scripts/badge.svg)
+
+
 ## System Requirements
 - Red Hat Enterprise Linux (RHEL) 9
 - Access to the internet
