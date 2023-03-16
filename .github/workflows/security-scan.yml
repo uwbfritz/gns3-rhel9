@@ -1,0 +1,17 @@
+name: Security Analysis of Shell Scripts
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Run ShellCheck
+      run: shellcheck -s bash -e SC2006 **/*.sh
+    - name: Install Bash Scanner
+      run: |
+         sudo apt-get update && sudo apt-get install bash
+         curl https://gitlab.com/gitlab-org/security-products/bashtest/-/raw/master/bash_scan.sh --output bash_scan.sh
+         chmod +x bash_scan.sh
+    - name: Execute Bash Scanner
+      run: ./bash_scan.sh .
