@@ -30,16 +30,20 @@ while true; do
 
     case "$choice" in
         1)
-            ./scripts/add-gns-user.sh
+            read -rp "Enter the username: " username
+            ./scripts/add-gns-user.sh "$username"
             ;;
         2)
-            ./scripts/rdp-generator.sh
+            read -rp "Enter the username: " username
+            ./scripts/rdp-generator.sh "$username"
             ;;
         3)
-            ./scripts/change-password.sh
+            read -rp "Enter the username: " username
+            ./scripts/change-password.sh "$username"
             ;;
         4)
-            ./scripts/remove-user.sh
+            read -rp "Enter the username: " username
+            ./scripts/remove-user.sh "$username"
             ;;
         5)
             ./scripts/update-system.sh
