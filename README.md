@@ -3,7 +3,7 @@ This script installs and configures the necessary components to run GNS3 on Red 
 
 [![ShellCheck](https://github.com/uwbfritz/gns3-rhel9/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/uwbfritz/gns3-rhel9/actions/workflows/shellcheck.yml)
 
-[![Security Analysis](https://img.shields.io/github/workflow/status/uwbfritz/gns3-rhel9/Security%20Analysis?label=Security%20Analysis&logo=github)](https://github.com/uwbfritz/gns3-rhel9/worlflows/security-scan.yml)
+[![Security Analysis](https://img.shields.io/github/workflow/status/uwbfritz/gns3-rhel9/Security%20Analysis?label=Security%20Analysis&logo=github)](https://github.com/uwbfritz/gns3-rhel9/actions/worlflows/security-scan.yml)
 
 
 
