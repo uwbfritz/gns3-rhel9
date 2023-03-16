@@ -44,7 +44,7 @@ curl -sSL https://raw.githubusercontent.com/uwbfritz/gns3-rhel9/master/scripts/i
 - Configures miscellaneous settings.
 **Note:** This script requires superuser privileges to install software and make changes to the system.
 
-# VmwareKernelFix
+# VMWare Kernel Module Fix (Build and sign)
 This script is designed to patch kernel modules for VMware Workstation 17.0.1 and sign the resulting code. 
 
 ### Usage
