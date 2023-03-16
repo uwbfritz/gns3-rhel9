@@ -1,4 +1,4 @@
-name: Security Analysis of Shell Scripts
+name: Security Analysis
 on: push
 jobs:
   build:
