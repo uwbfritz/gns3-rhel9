@@ -93,7 +93,6 @@ libvirt_setup () {
   sudo dnf install -y libvirt qemu-kvm
   sudo usermod -aG libvirt "$(whoami)"
   sudo usermod -aG kvm "$(whoami)"
-  sudo usermod -aG docker "$(whoami)"
   sudo systemctl enable --now libvirtd
   sudo systemctl enable --now virtlogd
 }
